@@ -8,8 +8,11 @@
 
 body {
   padding-top: 5rem;
-  font: 1rem arial;
-  font-family: Tahoma, "Helvetica Neue", Helvetica, "Hiragino Sans GB", "Microsoft YaHei Light", "Microsoft YaHei", "Source Han Sans CN", "WenQuanYi Micro Hei", Arial, sans-serif;
+  /* font: 1rem arial; */
+  /* font: 12px/1.5 Tahoma,Helvetica,Arial,'宋体',sans-serif; */
+   font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif; 
+  /* font-family:Tahoma, 'Times New Roman',"Helvetica Neue", Helvetica, "Hiragino Sans GB", "Microsoft YaHei Light", "Microsoft YaHei", "Source Han Sans CN", "WenQuanYi Micro Hei", Arial, sans-serif; */
+/* font-family:'Lora', 'Times New Roman', serif !important; */
 }
 .main{
 	width: 80%;
@@ -19,7 +22,7 @@ a{
 	text-decoration-line: none;
 }
 .blog-post{
-	font-size: 0.8rem;
+	font-size: 1rem;
 	webkit-box-shadow: 4px 4px 18px rgba(0,0,0,0.4);
 	    box-shadow: 4px 4px 18px rgba(0,0,0,0.4);
 	    margin-bottom: 20px;

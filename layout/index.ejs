@@ -1,7 +1,17 @@
 
 
-
-<% site.posts.each(function(item){ %>
+<% page.posts.each(function(item){ %>
     <%- partial('_partial/article-excerpt', {item: item}) %>
 <% }); %>
 	<%- partial('_partial/pagination') %>
+
+<!-- 	<%- list_posts({
+	orderby:"date",
+	}) %> -->
+
+
+<!-- <% console.log(site.tags);%> -->
+<!-- <% console.log(page.path);%> -->
+
+	
+

@@ -1,3 +1,5 @@
+<%- is_post() %>
+
 <div class="blog-post">
 
     <!-- Title -->
@@ -14,15 +16,16 @@
             by <%- item.author %>
         <% } %>
     </p>
+    <!-- Tags and Categories links -->
+    <%- partial('article-tags', {item: item}) %>
+    <%- partial('article-categories', {item: item}) %>
 
     <!-- Content -->
     <%- item.content %>
 
     <hr />
 
-    <!-- Tags and Categories links -->
-    <%- partial('article-tags', {item: item}) %>
-    <%- partial('article-categories', {item: item}) %>
+    
 
 </div>
 

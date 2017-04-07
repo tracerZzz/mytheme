@@ -2,7 +2,8 @@
 menu:
   Home: /
   Archives: /archives
-  POSTS: /posts
+  category: /categorys
+  
 
 
 # Read More text
