@@ -1,19 +1,41 @@
-是否是archive:<%- is_archive() %>
-<!-- <%- list_archives({transform:function(item){
-	return item;
-	}}) %> -->
-归档日期<%- page.year%>
-<% if(!page.year){%>
-	<%- list_archives({transform:function(item){
-		var path=url_for("archives/"+2017)
-		var link="<a href='"+path+"'>"+item+"</a>"
-		return link;
-		}}) %> 
-<% }else{%>
+---
+layout: false
+---
+<!DOCTYPE html>
+<html lang=en>
 
-<% page.posts.each(function(item){ %>
-    <%- partial('_partial/article-excerpt', {item: item}) %>
-<% }); %>
-<%- partial('_partial/pagination') %>
+<head>
+    <meta charset=UTF-8>
+    <title>archive</title>
+<link href="/css/archive-CSS.css" rel="stylesheet"/><script type="text/javascript" src="/js/archive.bundle.js"></script></head>
 
-<% }%>
+<body class=cbp-spmenu-push>
+    <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id=cbp-spmenu-s2>
+        <h3>Tracer'blog</h3>
+        <a href=#>首页</a>
+        <a href=#>归档</a>
+        <a href=#>分类</a>
+        <a href=#>标签</a>
+        <a href=#>github</a>
+        <a href=#>about Me</a>
+    </nav>
+    <div class=container-fluid  style="">
+        <div class=row>
+            <div class=col-sm-3></div>
+            <div class=col-sm-8 style="">
+                <% page.posts.each(function(item){ %>
+			    <%- partial('_partial/article-excerpt', {item: item}) %>
+			<% }); %>
+				<%- partial('_partial/pagination') %>
+            </div>
+            <div class=col-sm-1></div>
+        </div>
+    </div>
+    <div id=menu class=menu>
+        <div class="menu menu-line line1" id=line1></div>
+        <div class="menu menu-line line2" id=line2></div>
+        <div class="menu menu-line line3" id=line3></div>
+    </div>
+</body>
+
+</html>

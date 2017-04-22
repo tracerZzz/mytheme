@@ -14,10 +14,7 @@ body {
   /* font-family:Tahoma, 'Times New Roman',"Helvetica Neue", Helvetica, "Hiragino Sans GB", "Microsoft YaHei Light", "Microsoft YaHei", "Source Han Sans CN", "WenQuanYi Micro Hei", Arial, sans-serif; */
 /* font-family:'Lora', 'Times New Roman', serif !important; */
 }
-.main{
-	width: 80%;
-	margin-left: 15%;
-}
+
 a{
 	text-decoration-line: none;
 }
@@ -81,4 +78,35 @@ a{
         box-shadow: 4px 4px 18px rgba(0,0,0,0.4);
         margin-bottom: 20px;
         padding:15px 15px 15px 15px;
+}
+
+
+#menu{
+	height: 40px;
+	width: 40px;
+	position: fixed;
+	right: 100px;
+	bottom: 100px;
+	border-radius: 5px;
+	border: 2px solid gray;
+	background-color:none;
+	z-index: 3;
+}
+
+
+.menu-line{
+	border: none;
+	position: relative;
+	left: 12%;
+	height: 4px;
+	width:76%;
+	background-color:gray; 
+	border-radius: 2px;
+}
+.line1{
+	margin-top: 8px;
+}.line2{
+	margin-top: 4px;
+}.line3{
+	margin-top: 4px;
 }
